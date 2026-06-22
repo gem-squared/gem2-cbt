@@ -1,0 +1,58 @@
+# GEM² standard ignores
+.DS_Store
+*.env
+*.env.local
+*.log
+__pycache__/
+*.pyc
+*.pyo
+node_modules/
+.venv/
+venv/
+dist/
+build/
+*.egg-info/
+
+# Secrets — never commit
+.env
+*.env
+*.env.*
+!.env.example
+*.key
+*.pem
+*.p12
+*.pfx
+*.secret
+secrets/
+secrets/*
+
+# Internal-only documents
+Doc_internal/
+Doc_internal/*
+
+# Agent / local orchestration internals
+.gem-squared/
+.gem-squared/*
+.claude/
+.claude/*
+.mcp.json
+CLAUDE.md
+AGENTS.md
+
+# Local runtime / caches
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.cache/
+tmp/
+temp/
+outputs/
+
+# Heavy/generated artifacts that should be curated before public release
+data/**/checkpoints*/
+data/**/*.pt
+data/**/*.ckpt
+data/**/*.safetensors
+data/**/*.bin
+data/**/raw_runs.jsonl
+data/processed*/

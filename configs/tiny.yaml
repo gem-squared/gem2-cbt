@@ -1,0 +1,12 @@
+# Tiny CBT config (paper baseline)
+block_size: 184      # = max char length over dataset (set automatically at runtime)
+n_layer: 2
+n_head: 2
+n_embd: 96
+dropout: 0.1
+# training
+epochs: 30
+batch: 512
+lr: 0.001
+lam: 0.5             # weight on boundary loss in L = L_LM + lam * L_boundary
+seed: 0

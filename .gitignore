@@ -56,3 +56,5 @@ data/**/*.safetensors
 data/**/*.bin
 data/**/raw_runs.jsonl
 data/processed*/
+data/
+data/*
